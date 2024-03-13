@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+    <style>
+        body {
+            background-image: url(wp-ch4network.jpeg);
+        }
+        a {text-decoration: none; color: #ffffff}
+        a:hover {color: #0099aa}
+        a:visited {color: #000000}
+        a:active {color: #996699}
+        
+        table.outer {
+            width: 70%;
+            color: #3a0d39f1;
+            background-color: #f3eded;
+            margin: auto;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        }
+        table.inner {
+            width: 100%;
+            color:#000000f1;
+            background-color:#f4e6c0;
+            border-collapse: collapse;
+        }
+        tr.header {
+            background-color: #99c9e4;
+        }
+        td,th {
+            padding: 12px;
+            border: 1px solid #000000
+        }
+    </style>
+</head>
+<body>
+
+<table class="outer" border ="0">
+    <tr class="header">
+        <td><a href="ch3opsys.html"> Home </a></td>
+        <td><a href="https://www.pvcc.edu"> PVCC </a></td>
+        <td><a href="https://www.w3schools.com/html/"> W3 Schools</a></td>
+        <td><a href="contactus.html"> Contact Us</a></td>
+    </tr>
+    <tr>
+        <td colspan="4">
+            <table class="inner" border="0">
+                <tr class="header">
+                    <th colspan="2">Networking & The Internet</th>
+                </tr>
+                <tbody>
+                    <tr>
+                        <td><B>TERM</B></td>
+                        <td><B>DEFINITION</B></td>
+                    </tr>
+                    <tr>
+                        <td>Network Classifications
+                            <ul>
+                             <li>LAN</li>  
+                             <li>MAN</li> 
+                             <li>WAN</li>
+                            </ul>
+                        </td>
+                        <td>A computer network is often classified as being either:
+                            <ul>
+                                <li>A local area network, which normally consists of a collection of computers in a single building or building complex.</li>
+                                <li>A metropolitan area network which is a network of intermediate size, such as one spanning a local community.</li>
+                                <li>A wide area network, which links machines over a greater distance, perhaps in neighboring cities or on opposite sides of the world.</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Network Models
+                            <ul>
+                                <li>Bus Network</li>
+                                <li>Star Network</li>
+                            </ul>
+                        </td>
+                        <td>Network Models refer to classifying networks based on the topology of the network, two of the more popular topologies are:
+                            <ul>
+                                <li>Bus, in which the machines are all connected to a common communication line called a bus.</li>
+                                <li>Star, in which one machine serves as a central focal point to which all the others are connected.</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Protocols
+                            <ul>
+                                <li>CSMA/CD Ethernet</li>
+                                <li>CSMA/CA Wifi</li>
+                            </ul>
+                        </td>
+                        <td>Protocols are rules established by which activites are conducted.
+                            <ul>
+                                <li>CSMA/CD dictates that each message be broadcast to all the machines on the bus.</li>
+                                <li>CSMA/CA refers to wireless networks adopting the policy of trying to avoid colisions rather than trying to detect them.</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Combining Networks
+                            <ul>
+                                <li>Repeater</li>
+                                <li>Bridge</li>
+                                <li>Switch</li>
+                                <li>Router</li>
+                                <li>Gateway</li>
+                            </ul>
+                        </td>
+                        <td>Sometimes it is necessary to connect existing networks to form an extended communication system.
+                            <ul>
+                                <li>The repeater is little more than a device that passes signals back and forth between the two original buses without considering the meaning of the signals.</li>
+                                <li>A bridge is similar to, but more complex than a repeater, it connects two buses but it does not necessarily pass all messages across the connection.</li>
+                                <li>A switch is essentially a bridge with multiple connections, allowing it to connect several buses rather than just two.</li>
+                                <li>Routers are special purpose computers used for fowarding messages</li>
+                                <li>A gateway is the "point" at which one network is linked to an internet.</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Client/Server Model
+                            <ul>
+                                <li>P2P: peer-to-peer</li>
+                                <li>Distributed System</li>
+                                <li>Cloud Computing</li>
+                            </ul>
+                        </td>
+                        <td>The client/server model is a popular convention used for interprocess communication.
+                            <ul>
+                                <li>P2P involves processes that provide services to and receive service from each other.</li>
+                                <li>Distributed systems consist of software units that execute as processes on different computers</li>
+                                <li>Cloud computing, whereby huge pools of shared computers on the network can be allocated for  use by clients as needed, is the latest trend in distributed systems.</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Internet Addressing
+                            <ul>
+                                <li>Tier 1</li>
+                                <li>Tier 2</li>
+                                <li>Tier 3</li>
+                            </ul>
+                        </td>
+                        <td>
+                            <ul>
+                                <li>Tier 1 consists of very high-speed, high-capacity, international WANs.</li>
+                                <li>Tier 2 tend to be more regional in scope and less potent in their capabilities.</li>
+                                <li>Tier 3 keeps the network connected even if very important tier-1 routers fail.</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>IP Address
+                            <ul>
+                                <li>ICANN <a href="https://www.icann.org/"></a></li>
+                                <li>DNS</li>
+                                <li>TLD: Top-level domain</li>
+                                <li>Country-code TLDs <a href="https://www.worldstandards.eu/other/tlds/"></a></li>
+                            </ul>
+                        </td>
+                        <td>A unique identifying address assigned to each computer in a system.
+                            <ul>
+                                <li>ICANN: Internet Corporation for Assigned Names and Numbers, a non-profit organization established to coordinate the Internet's operation.</li>
+                                <li>Domain Name System: name servers used as an internet-wide directory system.</li>
+                                <li>Top-Level Domain consists of the suffixes used to indicate the domain's classification.</li>
+                                <li>Country-code TLDs refer to two-letter TLDs for each specific country.</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Internet Protocols
+                            <ul>
+                                <li>FTP</li>
+                                <li>HTTP</li>
+                                <li>SMTP</li>
+                            </ul>
+                        </td>
+                        <td>
+                            <ul>
+                                <li>File Transfer Protocol: an application for accessing another computer from a great distance.</li>
+                                <li>Hyper Text Transfer Protocol</li>
+                                <li>Simple Mail Transfer Protocol: defines a way that two computers on the network may interact when transmitting an email message from one host to the other.</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>World Wide Web
+                            <ul>
+                                <li>URL</li>
+                                <li>Client-side Activities</li>
+                                <li>Server-side Activities</li>
+                            </ul>
+                        </td>
+                        <td>
+                            <ul>
+                                <li>Uniform Resource Locator: the unique address given to each document.</li>
+                                <li>Activities if they are perfomed by a client (such as a browser).</li>
+                                <li>Activities if they are performed by a server (such as a webserver).</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Internet four-layer software
+                            <ul>
+                                <li>Application Layer</li>
+                                <li>Transport Layer</li>
+                                <li>Network Layer</li>
+                                <li>Link Layer</li>
+                            </ul>
+                        </td>
+                        <td>The internet software has four layers, each consisting of a collection of software routines rather than people and businesses.
+                            <ul>
+                                <li>The application layer consists of those software unites such as clients and servers that use Internet communication to carry out their tasks.</li>
+                                <li>The transport layer is used to send and receive messages over the Internet in much the same way that you would use a shipping company to send and receive packages.</li>
+                                <li>It is the network layer's job to decide in which direction a packet should be sent at each step along the packet's path through the inernet.</li>
+                                <li>The link layer has the responsibility of trasnferring the packet. Thus, the link layer must deal with the communication details particular to the individual network in which the computer resides.</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Internet is:
+                            <ul>
+                                <li>Packet-switching Network</li>
+                                <li>Fault Tolerant</li>
+                                <li>Redundant</li>
+                            </ul>
+                        </td>
+                        <td>
+                            <ul>
+                                <li>The internet is a packet-switched system through which digital data is sent by breaking the data into blocks of bits called packets, which contain both the data being transmitted and control information for routing the data.</li>
+                                <li>Enables a computer to respond to a failure in hardware or software.</li>
+                                <li>The redundancy of routing between two points on the internet increases the reliability of the internet and helps it scale to more devices and more people.</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Cybersecurity
+                            <ul>
+                                <li>Malware</li>
+                                <li>Virus</li>
+                                <li>Worm</li>
+                                <li>Trojan Horse</li>
+                                <li>Spyware</li>
+                                <li>phishing</li>
+                                <li>DDoS Attack</li>
+                            </ul>
+                        </td>
+                        <td>Cybersecurity is the study of protecting computers, networks, and data from attacks.
+                            <ul>
+                                <li>Malware refers to the use of malicious software to attack.</li>
+                                <li>A virus is software that infects a computer by inserting itself into programs that already reside in the machine.</li>
+                                <li>A worm is an autonomous program that transfers itself through a network, taking up residence in computers and fowarding copies of itself to other computers.</li>
+                                <li>A trojan horse is a program that enters a computer system disguised as a desirable program, such as game or useful utility package, that it willingly imported by the victim. Once in the computer, it might have harmful effects.</li>
+                                <li>Spyware is another form of malicious software which collects information about activities at the computer on which it resides and reports that information back to the instigator of the attack.</li>
+                                <li>Phishing is a technique of obtaining information explicitly by simply asking for it.</li>
+                                <li>Denial of service attack is the process of overloading a computer with messages.</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Protection
+                            <ul>
+                                <li>Firewall</li>
+                                <li>Spam Filter</li>
+                                <li>Proxy Server</li>
+                                <li>Antivirus Software</li>
+                                <li>Cryptography</li>
+                                <li>Public Key Encryption</li>
+                            </ul>
+                        </td>
+                        <td>
+                            <ul>
+                                <li>A firewall is a program which filters traffic passing through a point in the network.</li>
+                                <li>Spam filters are firewalls designed to block unwanted email.</li>
+                                <li>A proxy server is a software unit that acts as an intermediary between a client and a server with the goal of sheilding the client from adverse actions of the server.</li>
+                                <li>Antivirus software is used to detect and remove the presence of known viruses and other infections.</li>
+                                <li>Cryptography is the study of of sending and receiving messages securely in the presence of adversaries.</li>
+                                <li>Public-key encryption involves techniques by which the encryption and decryption algorithms are known, and one the keys is known, but the encoded message remains secure.</li>
+                            </ul>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </td>
+    </tr>
+</table>
+
+</body>
+</html>
