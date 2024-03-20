@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+    <style>
+        h1 {
+            text-align:center;
+            border: 2px solid #000;
+            padding: 10px 20px;
+            max-width: 800px;
+        }
+        h2 {text-align:center;}
+        body {
+            background-image: url(wp-programming.jpeg);
+        }
+        a {text-decoration: none; color: #0d0808}
+        a:hover {color: #0099aa}
+        a:visited {color: #000000}
+        a:active {color: #996699}
+        
+        table.outer {
+            width: 70%;
+            color: #3a0d39f1;
+            background-color: #f3eded;
+            margin: auto;
+            font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        }
+        table {
+            width: 60%;
+            color:#000000f1;
+            background-color:#f4e6c0;
+            margin: auto;
+            border-collapse: collapse;
+        }
+        tr.header {
+            background-color: #99c9e4;
+        }
+        td,th {
+            padding: 12px;
+            border: 1px solid #000000;
+            font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            text-align: center;
+        }
+        li {
+            text-align: left;
+            margin-bottom: 10px;
+            font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            font-size: 16px;
+        }
+    </style>
+</head>
+<body>
+
+<table class="outer" border ="0">
+    <tr class="header">
+        <td><a href="ch3opsys.html"> Home </a></td>
+        <td><a href="https://www.pvcc.edu"> PVCC </a></td>
+        <td><a href="https://www.w3schools.com/html/"> W3 Schools</a></td>
+        <td><a href="contactus.html"> Contact Us</a></td>
+    </tr>
+</table>
+
+<h1>Chapter 5: Programming Algorithms & Software Testing</h1>
+<h2> Phases of computer program development:</h2>
+<ul>
+    <li>Phase 1: Understanding the problem</li>
+    <li>Phase 2: Design an algorithm to solve the problem</li>
+    <li>Phase 3: Write the program code in appropriate language based on the algorithm</li>
+    <li>Phase 4: Enter the program</li>
+    <li>Phase 5: Execute the programs</li>
+    <li>Phase 6: Test the program, find errors and debug, then retest</li>
+    <li>Phase 7: Document and evaluate the program</li>
+</ul>
+
+<h2>Programming structures:</h2>
+    <ol>
+        <li>Sequential structure: Top-down execution</li>
+        <li>Decision structures: if/then/else</li>
+        <li>Iterative (Looping):
+            <ul>
+                <li>while loop: conitnue looping as long something is true</li>
+                <li>repeat/ until loop: conitnue looping until something is true</li>
+                <li>for loop a given number of times</li>
+            </ul>
+        </li>
+        <li>Recursive structures:
+            <ul>
+                <li>Repeat a set of instructions as a subtask of itself</li>
+                <li>Repetition continues until:
+                    <ul>
+                        <li>degenerative case, which is a termination condition, is met (degenerative case is also called "base case"</li>
+                    </ul>
+                </li>
+            </ul>
+        </li>
+    </ol>
+
+<h2>Two classic programming/ database problems</h2>
+
+<table>
+    <tr>
+        <td><B>Sorting:</B></td>
+        <td>
+            <ul>
+                <li>Descending order/ Ascending order
+                    <ul>
+                        <li>Sorting numbers</li>
+                        <li>Sorting strings (in accordance with ASCII values)</li>
+                    </ul>
+                </li>
+            </ul>
+        </td>
+    </tr>
+    <tr>
+        <td><B>Searching:</B></td>
+        <td>Find specific data that meet a certain criteria
+            <ul>
+                <li>In database:
+                    <ul>
+                        <li>Filters: temporary search</li>
+                        <li>Queries: search criteria are saved so they don't have to be recreated</li>
+                    </ul>
+                </li>
+            </ul>
+        </td>
+    </tr>
+    <tr>
+        <td><B>Two popular search techniques</B></td>
+        <td>
+            <ol>
+                <li> Sequential search: search from top to bottom or bottom to top, one item at a time</li>
+                <li>Binary search:
+                    <ul>
+                        <li>only works if data is SORTED first</li>
+                        <li>start in the middle, then go to half of that, etc.</li>
+                    </ul>
+                </li>
+            </ol>
+        </td>
+    </tr>
+</table>
+
+<h2> Two classic program goals:</h2>
+    <ol>
+        <li>Efficiency: Program takes minimal time and/or resources</li>
+        <li>Correctness: Program runs in expected ways and works for all expected conditions</li>
+    </ol>
+    
+<h2>Software testing and verification</h2>
+    <ul>
+        <li>Kinds of tests
+            <table>
+                <tr>
+                    <td>TERM</td>
+                    <td>DEFINITION</td>
+                </tr>
+                <tr>
+                    <td>Acceptance testing</td>
+                    <td>Verifying whether the whole system works as intended.</td>
+                </tr>
+                <tr>
+                    <td>Integration testing</td>
+                    <td>Ensuring that software components or functions operate together.</td>
+                </tr>
+                <tr>
+                    <td>Unit testing</td>
+                    <td>Validating that each software unit runs as expected. A unit is the smallest testable component of an application.</td>
+                </tr>
+                <tr>
+                    <td>Functional testing</td>
+                    <td>Checking functions by emulating business scenarios, based on functional requirements. Black-box testing is a common way to verify functions.</td>
+                </tr>
+                <tr>
+                    <td>Perfomance testing</td>
+                    <td>testing how the software runs under different workloads. Load testing, for example, is used to evaluate perfomance under real-life load conditions.</td>
+                </tr>
+                <tr>
+                    <td>Regression testing</td>
+                    <td>Checking whether new features break or degrade functionality. Sanity testing can be used to verify menus, functions and commands at the surface level, when there is no time for a full regression test.</td>
+                </tr>
+                <tr>
+                    <td>Stress Testing</td>
+                    <td>Testing how much strain the system can take before it fails. Stress testing is considered to be a type of non-functional testing.</td>
+                </tr>
+                <tr>
+                    <td>Usability testing</td>
+                    <td>Validating how well a customer can use a system or application to complete a task.</td>
+                </tr>
+            </table>
+        </li>
+        <li>Software testing is done to detect:
+            <table>
+                <tr>
+                    <td>Architectural flaws</td>  
+                </tr>
+                <tr>
+                    <td>Poor design decisions</td>
+                </tr>
+                <tr>
+                    <td>Invalid or incorret functionality</td>
+                </tr>
+                <tr>
+                    <td>Security vulnerabilities</td>
+                   
+                </tr>
+                <tr>
+                    <td>Scalability issues</td>
+                    
+                </tr>
+            </table>
+        </li>
+        <li>Testing best practices:
+            <table>
+                <tr>
+                    <td>TERM</td>
+                    <td>DEFITION</td>
+                </tr>
+                <tr>
+                    <td>Continuous testing</td>
+                    <td>This type of software testing relies on test automation that is integrated with the deployement process. It enables software to be validated in realistic test environments earlier in the process, which improves design and reduces risks.</td>
+                </tr>
+                <tr>
+                    <td>Configuration management</td>
+                    <td>Organizations centrally maintain test assets and track what software builds to test. Teams gain access to assets such as code, requirements, design documents, models, test scripts, and tests results. Good systems include user authertication and audit trails to help teams meet compliance requirements  with minimal administrative effort.</td>
+                </tr>
+                <tr>
+                    <td>Servic vistualization</td>
+                    <td>Testing environments might not be available, especially early in code development. Service virtualization simulates the services and systems that are missing or not yet completed, enabling teams to reduce dependencies and test sooner. They can reuse, deploy and change a configuration to test different scenarios without having to modify the original environment.</td>
+                </tr>
+                <tr>
+                    <td>Defect or "bug tracking"</td>
+                    <td>Monitoring defects is important to both testing and development teams for measuring and improving quality. Automated tools allow teams to track defects, measure their scope and impact, and uncover related issues.</td>
+                </tr>
+                <tr>
+                    <td>Metrics and reporting</td>
+                    <td>Reporting and analytics enable team members to share status, goals and test results. Advanced tools integrate project metrics and present results in a dashboard. Teams quickly see the overall health of a project and can monitor relationships between test, development and other project elements.</td>
+                </tr>
+            </table>
+        </li>
+    </ul>
+<h2><li><a href = https://www.ibm.com/topics/software-testing> From: IBM What is software testing?</a></li></h2>
+
+</body>
+</html>
